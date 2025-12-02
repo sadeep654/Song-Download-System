@@ -172,12 +172,12 @@ See the **LICENSE** file for details.
 	
 ---
 
-📘 Citation
+## 🔹 Citation
 
 If you reference this work, please cite:
 
 ```bash
-Kasthuriarachchi, S.D. (2020) Music Artist & Song Management System. Available at: https://github.com/sadeep654/Song-Download-System (Accessed: date-you-accessed)
+Kasthuriarachchi, S.D. (2020) Music Artist & Song Management System. [online] Available at: https://github.com/sadeep654/Song-Download-System (Accessed: date-you-accessed)
 ```
 
 
