@@ -100,31 +100,48 @@ private static final String USER = "root";
 private static final String PASS = "your_password_here";
 ```
 
->### ▶️ Running the Application
+### ▶️ Running the Application
 
+>1️⃣ Compile the project
+```javac *.java```
 
+>2️⃣ Run the system
+```java MainMenu```
+
+>3️⃣ Application Menu
+```
+=== Music Management System (MySQL) ===
+1) Add Artist
+2) Add Song
+3) Update Song Price
+4) Delete Song
+5) List Songs
+6) Simulate Play
+7) List Artists
+0) Exit
+```
 
 ---
 
 ## 🔹 Class Overview
 
-Models
-	•	Artist.java – Artist entity
-	•	Song (inside PlayASong.java) – Song entity
-	•	User.java – Placeholder for future authentication
-	•	Operators.java – Example operator information
+**Models**
+>- Artist.java – Artist entity
+>- Song (inside PlayASong.java) – Song entity
+>- User.java – Placeholder for future authentication
+>- Operators.java – Example operator information
 
-Logic
-	•	Calculations.java – Revenue & math utilities
-	•	PlayASong.java – Simulates playback & revenue estimation
+**Logic**
+>- Calculations.java – Revenue & math utilities
+>- PlayASong.java – Simulates playback & revenue estimation
 
-Database Layer
-	•	DBConnection.java – JDBC connector
-	•	ArtistDAO.java – Insert & list artists
-	•	SongDAO.java – CRUD operations for songs
+**Database Layer**
+>- DBConnection.java – JDBC connector
+>- ArtistDAO.java – Insert & list artists
+>- SongDAO.java – CRUD operations for songs
 
-Main Entry Point
-	•	MainMenu.java – Console-based interactive menu
+**Main Entry Point**
+>- MainMenu.java – Console-based interactive menu
 
 ---
 
@@ -140,13 +157,13 @@ Main Entry Point
 
 ## 🔹 License
 
-This project is licensed under the MIT License.
-See the LICENSE file for details.
+This project is licensed under the **MIT** License.
+See the **LICENSE** file for details.
 
 ---
 
 ## 🔹 Authors
-- S.D. Kasthuriarachchi
+- **S.D. Kasthuriarachchi**
 	
 ---
 
