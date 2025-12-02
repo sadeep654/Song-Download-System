@@ -60,7 +60,7 @@ Java-Music-Management/
 ```
 >### Architecture Summary
 <p align="center">
-  <img src="img/diagram.png" width="100%" alt="EMS" />
+  <img src="img/diagram.png" width="100%" alt="Music Artist & Song Management System" />
 </p>
 
 ---
