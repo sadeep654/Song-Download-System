@@ -1,32 +1,150 @@
-# 🎵 Java Music Artist & Song Management System (MySQL + JDBC)
-
-A fully upgraded Java OOP project with **MySQL database integration**, allowing artists and administrators to dynamically add songs, update prices, delete records, and view the full music catalog.  
-Originally an OOP academic project, this version enhances functionality using **JDBC**, **DAO design patterns**, and a **normalized MySQL schema**.
+<!-- Repository Banner -->
+<p align="center">
+  <img src="img/banner.png" width="100%" alt="Project Banner" />
+</p>
 
 ---
 
-## 📌 Features
+## 🔹 Overview
 
-### 🎤 Artist Management
-- Add new artists dynamically  
-- Store artist details in MySQL  
-- Artist ID auto-generated via database
+A fully functional Java application built using **Object-Oriented Programming (OOP)**, **MySQL**, and **JDBC**. The system manages **artists**, **songs**, and **song prices**, and includes CRUD operations stored in a real database. This upgraded version transforms the original assignment into a **production-style, database-backed system**.
 
-### 🎶 Song Management
-- Add songs with title, price, and artist ID  
+---
+
+## 🔹 Features
+
+>### 🎤 Artist Management
+- Add new artists  
+- Automatically generated artist IDs  
+- List all artists  
+
+>### 🎶 Song Management
+- Add songs with title, price, artist ID  
 - Update song prices  
-- Delete songs by ID  
-- List all songs with artist names  
-- Fully persistent MySQL storage  
+- Delete songs  
+- List all songs with artist details  
+- Supports real MySQL data storage  
 
-### 🧱 Technical Highlights
-- Java OOP Structure (Encapsulation, Classes, Objects)  
-- JDBC MySQL Integration  
-- DAO Layer (`ArtistDAO`, `SongDAO`)  
-- Modular, extensible architecture  
-- Console-based user interface  
-- Supports CRUD operations for songs and artists  
+>### ▶️ Song Playback Simulation
+- Simulate song plays  
+- Estimate revenue after platform fee  
+- Demonstrates Java class interactions  
+
+>### 🧱 Architecture Overview
+- DAO Pattern (`ArtistDAO`, `SongDAO`)  
+- Modular OOP classes  
+- MySQL-backed persistence  
+- Console-based UI (`MainMenu`)  
+- Lightweight reusable models  
 
 ---
 
-## 🗂️ Project Structure
+## 🔹 Architecture
+
+>## Project Structure
+
+```bash
+Java-Music-Management/
+├── src/
+│   ├── Artist.java
+│   ├── User.java
+│   ├── Operators.java
+│   ├── PlayASong.java
+│   ├── Calculations.java
+│   ├── DBConnection.java
+│   ├── ArtistDAO.java
+│   ├── SongDAO.java
+│   └── MainMenu.java
+├── database/
+    └── init_database.sql
+```
+
+---
+
+---
+
+## 🛢️ MySQL Database Setup
+
+Run the provided SQL script: ```database/init_database.sql```
+
+Or manually execute:
+
+```sql
+CREATE DATABASE musicdb;
+USE musicdb;
+
+CREATE TABLE artists (
+    artist_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE songs (
+    song_id INT AUTO_INCREMENT PRIMARY KEY,
+    artist_id INT NOT NULL,
+    title VARCHAR(200) NOT NULL,
+    price DECIMAL(6,2) NOT NULL,
+    FOREIGN KEY (artist_id) REFERENCES artists(artist_id) ON DELETE CASCADE
+);
+```
+
+🔌 JDBC Configuration
+
+Update your MySQL credentials in DBConnection.java:
+```
+private static final String URL = "jdbc:mysql://localhost:3306/musicdb?serverTimezone=UTC";
+private static final String USER = "root";
+private static final String PASS = "your_password_here";
+```
+
+▶️ Running the Application
+
+🧠 Class Overview
+
+Models
+	•	Artist.java – Artist entity
+	•	Song (inside PlayASong.java) – Song entity
+	•	User.java – Placeholder for future authentication
+	•	Operators.java – Example operator information
+
+Logic
+	•	Calculations.java – Revenue & math utilities
+	•	PlayASong.java – Simulates playback & revenue estimation
+
+Database Layer
+	•	DBConnection.java – JDBC connector
+	•	ArtistDAO.java – Insert & list artists
+	•	SongDAO.java – CRUD operations for songs
+
+Main Entry Point
+	•	MainMenu.java – Console-based interactive menu
+
+⸻
+
+🔮 Future Enhancements
+	•	Add authentication for admins/users
+	•	Add GUI using JavaFX or Swing
+	•	Add playlist management
+	•	Add user accounts and premium packages
+	•	Add REST API using Spring Boot
+	•	Add full CRUD UI
+
+⸻
+
+📜 License
+
+This project is licensed under the MIT License.
+See the LICENSE file for details.
+
+⸻
+
+👥 Authors
+	•	S.D. Kasthuriarachchi
+	
+⸻
+
+📘 Citation
+
+If you reference this work, please cite:
+
+
+
