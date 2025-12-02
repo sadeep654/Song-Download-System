@@ -175,6 +175,6 @@ See the **LICENSE** file for details.
 📘 Citation
 
 If you reference this work, please cite:
-
+```Kasthuriarachchi, S.D. (2020) Music Artist & Song Management System. Available at: https://github.com/your-repo-link (Accessed: 25 February 2025)```
 
 
