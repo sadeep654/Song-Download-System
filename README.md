@@ -8,6 +8,11 @@
 ## 🔹 Overview
 
 A fully functional Java application built using **Object-Oriented Programming (OOP)**, **MySQL**, and **JDBC**. The system manages **artists**, **songs**, and **song prices**, and includes CRUD operations stored in a real database. This upgraded version transforms the original assignment into a **production-style, database-backed system**.
+<p align="center">
+  <img src="img/demo.gif" alt="water" width="1000px">
+</p>
+ 
+>Full system description referenced from project documentation.
 
 ---
 
