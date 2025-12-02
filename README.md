@@ -58,12 +58,16 @@ Java-Music-Management/
 ├── database/
     └── init_database.sql
 ```
+>### Architecture Summary
+<p align="center">
+  <img src="img/diagram.png" width="100%" alt="EMS" />
+</p>
 
 ---
 
----
+## 🔹 Configurations
 
-## 🛢️ MySQL Database Setup
+>## MySQL Database Setup
 
 Run the provided SQL script: ```database/init_database.sql```
 
@@ -87,7 +91,7 @@ CREATE TABLE songs (
 );
 ```
 
-🔌 JDBC Configuration
+>## JDBC Configuration
 
 Update your MySQL credentials in DBConnection.java:
 ```
@@ -96,9 +100,13 @@ private static final String USER = "root";
 private static final String PASS = "your_password_here";
 ```
 
-▶️ Running the Application
+>### ▶️ Running the Application
 
-🧠 Class Overview
+
+
+---
+
+## 🔹 Class Overview
 
 Models
 	•	Artist.java – Artist entity
@@ -118,29 +126,29 @@ Database Layer
 Main Entry Point
 	•	MainMenu.java – Console-based interactive menu
 
-⸻
+---
 
-🔮 Future Enhancements
-	•	Add authentication for admins/users
-	•	Add GUI using JavaFX or Swing
-	•	Add playlist management
-	•	Add user accounts and premium packages
-	•	Add REST API using Spring Boot
-	•	Add full CRUD UI
+## 🔹 Future Enhancements
+- Add authentication for admins/users
+- Add GUI using JavaFX or Swing
+- Add playlist management
+- Add user accounts and premium packages
+- Add REST API using Spring Boot
+- Add full CRUD UI
+  
+---
 
-⸻
-
-📜 License
+## 🔹 License
 
 This project is licensed under the MIT License.
 See the LICENSE file for details.
 
-⸻
+---
 
-👥 Authors
-	•	S.D. Kasthuriarachchi
+## 🔹 Authors
+- S.D. Kasthuriarachchi
 	
-⸻
+---
 
 📘 Citation
 
