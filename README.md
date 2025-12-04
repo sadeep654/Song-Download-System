@@ -168,7 +168,9 @@ See the **LICENSE** file for details.
 ---
 
 ## 🔹 Authors
-- **S.D. Kasthuriarachchi**
+```bash
+Copyright (c) 2020 Sadeep Dilshan Kasthuriarachchi
+```
 	
 ---
 
